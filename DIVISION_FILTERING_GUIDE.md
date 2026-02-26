@@ -87,7 +87,7 @@ GET /api/complaints?category=Water%20Supply&division=Dhaka
 1. Start XAMPP (Apache + MySQL)
 2. Ensure the SlumLink database is created
 3. Run: `cd backend && npm start` to start the backend server
-4. Open the application at `http://localhost:5001`
+4. Open the application at `https://slum-link.onrender.com`
 
 ### Test Case 1: Dhaka Authority
 1. Navigate to Sign In page (`/src/signin.html`)

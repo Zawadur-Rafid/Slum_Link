@@ -26,7 +26,8 @@ const __dirname = path.dirname(__filename);
 dotenv.config({ path: path.join(__dirname, ".env") });
 
 const app = express();
-const PREFERRED_PORT = Number(process.env.SERVER_PORT) || 5001;
+// Use Render's PORT environment variable, fallback to 5001 for local development
+const PREFERRED_PORT = Number(process.env.PORT) || Number(process.env.SERVER_PORT) || 5001;
 
 app.use(cors());
 app.use(express.json({ limit: "50mb" }));

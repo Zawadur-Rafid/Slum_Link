@@ -122,7 +122,7 @@ function loadUserProfile() {
 
 const API_BASES = Array.from(new Set([
   `${window.location.origin}/api`,
-  'http://localhost:5001/api'
+  'https://slum-link.onrender.com/api'
 ])).filter(Boolean);
 
 async function fetchWithFallback(path, options) {
@@ -3450,7 +3450,7 @@ function showToast(title, message, type = 'success') {
   }
 
   // API Base URL
-  const API_BASE = 'http://localhost:5001/api';
+  const API_BASE = 'https://slum-link.onrender.com/api';
 
   // Step 1: Initial confirmation
   changePhoneBtn.addEventListener('click', showModal);
@@ -3797,7 +3797,7 @@ function showToast(title, message, type = 'success') {
   }
 
   // API Base URL
-  const API_BASE = 'http://localhost:5001/api';
+  const API_BASE = 'https://slum-link.onrender.com/api';
 
   // Event delegation for change spouse phone buttons
   document.addEventListener('click', (e) => {
